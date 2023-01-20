@@ -10,13 +10,13 @@
 
 @media screen and (max-width: 767px){
   .profile__info{
-    grid-template-columns:  auto;
-    grid-template-rows: 132px 1fr min-content;
+    grid-template-columns:1fr max-content 1fr;
+    grid-template-rows: 132px min-content min-content;
     justify-items: center;
     grid-template-areas:
-  " profile__photo profile__photo"
-  " profile__name profile__bt-edit "
-  " profile__discription . ";
+  " profile__photo profile__photo profile__photo"
+  " . profile__name profile__bt-edit "
+  " . profile__discription . ";
     column-gap: 10px;
     row-gap: 14px;
   }

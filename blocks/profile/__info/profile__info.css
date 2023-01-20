@@ -1,0 +1,23 @@
+.profile__info{
+  display: grid;
+  grid-template-columns: 132px 1fr 24px;
+  grid-template-areas:
+  " profile__photo profile__name profile__bt-edit "
+  " profile__photo profile__discription . ";
+  row-gap: 16px;
+  column-gap: 18px;
+}
+
+@media screen and (max-width: 767px){
+  .profile__info{
+    grid-template-columns:  auto;
+    grid-template-rows: 132px 1fr min-content;
+    justify-items: center;
+    grid-template-areas:
+  " profile__photo profile__photo"
+  " profile__name profile__bt-edit "
+  " profile__discription . ";
+    column-gap: 10px;
+    row-gap: 14px;
+  }
+}

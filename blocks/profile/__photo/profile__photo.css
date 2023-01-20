@@ -1,0 +1,7 @@
+.profile__photo{
+    object-fit: cover;
+    border-radius: 60px;
+    max-width: 120px;
+    min-height: 120px;
+    grid-area: profile__photo;
+}

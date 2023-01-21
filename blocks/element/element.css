@@ -1,0 +1,17 @@
+.element{
+  margin: 0;
+  padding: 0;
+  max-width: 282px;
+  min-height: 361px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 42px;
+  grid-template-rows: min-content 1fr;
+  gap: 0px;
+  grid-template-areas:
+  " element__image element__image "
+  " element__title element__like ";
+  overflow: hidden;
+}

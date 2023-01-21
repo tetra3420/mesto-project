@@ -1,0 +1,9 @@
+.element__like{
+  grid-area: element__like;
+  background: url("../../../images/like.svg") transparent center no-repeat;
+  max-width: 22px;
+  min-height: 19px;
+  border: none;
+  align-self: center;
+  padding: 0;
+}

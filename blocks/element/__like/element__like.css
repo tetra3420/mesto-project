@@ -6,4 +6,11 @@
   border: none;
   align-self: center;
   padding: 0;
+  transition: opacity 0.1s;
 }
+
+.element__like:hover{
+  opacity: 50%;
+  cursor: pointer;
+}
+

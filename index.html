@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
 </head>
-<body class="back-color">
-  <div class="page">
+<body class="page">
+  <div class="page__content">
     <header class="header">
       <img class="header__logo" src="./images/logo.svg" alt="логотип Mesto">
     </header>
@@ -17,10 +17,10 @@
         <div class="profile__info">
           <img class="profile__photo" src="./images/kusto.jpg" alt="аватарка пользователя">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__bt-edit button-hv" type="button" title="Редактировать профиль"></button>
+          <button class="profile__bt-edit" type="button" title="Редактировать профиль"></button>
           <p class="profile__discription">Исследователь океана</p>
         </div>
-        <button class="profile__bt-add button-hv" type="button" title="Добавить фото"></button>
+        <button class="profile__bt-add" type="button" title="Добавить фото"></button>
       </section>
       <section>
         <ul class="elements">
@@ -28,7 +28,7 @@
             <figure class="element">
               <img class="element__image" src="./images/karachyevsk.jpg" alt="заброшенная церковь.фото">
               <figcaption class="element__title">Карачаевск</figcaption>
-              <button class="element__like"></button>
+              <button class="element__like" type="button" title="Like"></button>
             </figure>
           </li>
           <li>
@@ -72,6 +72,17 @@
     <footer class="footer">
       <p class="footer__copyright">&COPY; <time datetime="2023">2023 Mesto Russia </time></p>
     </footer>
+  </div>
+  <div class="popup">
+    <form class="popup__container">
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <fieldset class="popup__fieldset">
+        <input class="popup__input" type="text" name="name" placeholder="Введите имя" value="Жак-Ив Кусто" required>
+        <input class="popup__input" type="text" name="discription"  placeholder="О себе" value="Исследователь океана" required>
+      </fieldset>
+      <button class="popup__save" type="submit" title="Сохранить профиль">Сохранить</button>
+      <button class="popup__close" type="button" title="Закрыть окно"></button>
+    </form>
   </div>
 </body>
 </html>

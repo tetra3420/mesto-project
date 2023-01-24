@@ -4,8 +4,16 @@
   background: url("../../../images/addbutton.svg") transparent center no-repeat;
   background-size: 22px;
   border: 2px solid #fff;
+  border-radius: 2px;
   padding: 0;
+  transition: opacity 0.1s;
 }
+
+.profile__bt-add:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 767px){
   .profile__bt-add{

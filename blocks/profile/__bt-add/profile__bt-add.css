@@ -7,6 +7,7 @@
   border-radius: 2px;
   padding: 0;
   transition: opacity 0.1s;
+  margin-left: 20px;
 }
 
 .profile__bt-add:hover {
@@ -17,6 +18,7 @@
 
 @media screen and (max-width: 767px){
   .profile__bt-add{
+    margin: 0;
     min-width: 282px;
     min-height: 50px;
     background-size: 16px;

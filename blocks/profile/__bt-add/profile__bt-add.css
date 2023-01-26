@@ -7,14 +7,18 @@
   border-radius: 2px;
   padding: 0;
   transition: opacity 0.1s;
-  margin-left: 20px;
 }
 
-.profile__bt-add:hover {
+.profile__bt-add:hover{
   opacity: 60%;
   cursor: pointer;
 }
 
+@media screen and (max-width: 940px){
+  .profile__bt-add{
+    margin-right: 20px;
+  }
+}
 
 @media screen and (max-width: 767px){
   .profile__bt-add{

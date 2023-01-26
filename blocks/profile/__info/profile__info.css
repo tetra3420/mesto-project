@@ -8,15 +8,22 @@
   column-gap: 18px;
 }
 
+@media screen and (max-width: 940px){
+  .profile__info{
+    margin-left: 20px;
+  }
+}
+
 @media screen and (max-width: 767px){
   .profile__info{
+    margin: 0;
     grid-template-columns:1fr max-content 1fr;
     grid-template-rows: 137px min-content min-content;
     justify-items: center;
     grid-template-areas:
-  " profile__photo profile__photo profile__photo"
-  " . profile__name profile__bt-edit "
-  " . profile__discription . ";
+    " profile__photo profile__photo profile__photo"
+    " . profile__name profile__bt-edit "
+    " . profile__discription . ";
     column-gap: 10px;
     row-gap: 9px;
   }

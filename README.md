@@ -18,7 +18,8 @@
 - HTML
 - CSS
 - FIgma
-- media queries
+- Media queries
+- Pixel Perfect
 **Figma**
 
 --------

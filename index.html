@@ -23,48 +23,17 @@
           <button class="profile__bt-add" type="button" title="Добавить фото"></button>
         </section>
         <section>
-          <ul class="elements">
-            <li class="element">
-              <img class="element__image" src="./images/karachyevsk.jpg" alt="заброшенная церковь.фото">
-              <h2 class="element__title">Карачаевск</h2>
-              <button class="element__like" type="button" title="Нравится"></button>
-            </li>
-            <li class="element">
-              <img class="element__image" src="./images/elbrus.jpg" alt="гора Эльбрус.фото">
-              <h2 class="element__title">Гора Эльбрус</h2>
-              <button class="element__like" type="button" title="Нравится"></button>
-            </li>
-            <li class="element">
-              <img class="element__image" src="./images/dombai.jpg" alt="Домбай.фото">
-              <h2 class="element__title">Домбай</h2>
-              <button class="element__like" type="button" title="Нравится"></button>
-            </li>
-            <li class="element">
-              <img class="element__image" src="./images/elbrus.jpg" alt="гора Эльбрус.фото">
-              <h2 class="element__title">Гора Эльбрус</h2>
-              <button class="element__like" type="button" title="Нравится"></button>
-            </li>
-            <li class="element">
-              <img class="element__image" src="./images/dombai.jpg" alt="Домбай.фото">
-              <h2 class="element__title">Домбай</h2>
-              <button class="element__like" type="button" title="Нравится"></button>
-            </li>
-            <li class="element">
-              <img class="element__image" src="./images/karachyevsk.jpg" alt="заброшенная церковь.фото">
-              <h2 class="element__title">Карачаево-Черкесия</h2>
-              <button class="element__like" type="button" title="Нравится"></button>
-            </li>
-          </ul>
+          <ul class="elements"></ul>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&COPY; <time datetime="2023">2023</time> Mesto Russia </p>
       </footer>
     </div>
-    <div class="popup">
+    <div class="popup" id="popup-edit">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="popup__form">
+        <form class="popup__form" id="edit-profile">
           <input class="popup__input" type="text" name="name" placeholder="Введите имя" value="Жак-Ив Кусто" required>
           <input class="popup__input" type="text" name="description"  placeholder="О себе" value="Исследователь океана" required>
           <button class="popup__save" type="submit" title="Сохранить профиль">Сохранить</button>
@@ -72,5 +41,25 @@
         <button class="popup__close" type="button" title="Закрыть окно"></button>
       </div>
     </div>
+    <div class="popup" id="popup-add">
+      <div class="popup__container">
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form" id="add-card">
+          <input class="popup__input" type="text" name="card-name" placeholder="Название" value="" required>
+          <input class="popup__input" type="text" name="link-image"  placeholder="Ссылка на картинку" value="" required>
+          <button class="popup__save" type="submit" title="Сохранить">Сохранить</button>
+        </form>
+        <button class="popup__close" type="button" title="Закрыть окно"></button>
+      </div>
+    </div>
+    <template id="element-template">
+      <li class="element">
+        <img class="element__image" src="" alt="">
+        <h2 class="element__title"></h2>
+        <button class="element__like" type="button" title="Нравится"></button>
+        <button class="element__delete" type="button" title="Удалить"></button>
+      </li>
+    </template>
+    <script src="./script.js"></script>
   </body>
 </html>

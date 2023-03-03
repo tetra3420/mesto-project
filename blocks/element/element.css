@@ -14,4 +14,5 @@
   " element__image element__image "
   " element__title element__like ";
   overflow: hidden;
+  position: relative;
 }

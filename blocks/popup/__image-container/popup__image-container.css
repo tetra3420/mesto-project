@@ -1,0 +1,10 @@
+.popup__image-container{
+  color: #fff;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  }
+
+

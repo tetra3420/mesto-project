@@ -7,6 +7,7 @@
   border-radius: 2px;
   padding: 0;
   transition: opacity 0.1s;
+  margin-left: 8px;
 }
 
 .profile__bt-add:hover{

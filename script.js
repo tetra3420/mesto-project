@@ -42,9 +42,9 @@ function closePopup(popup) {
   popup.classList.remove('popup_opened');
 };
 
-function closePopupButton(button) {
-  button.querySelector('.popup__close').addEventListener('click', function() {
-    closePopup(button);
+function closePopupButton(popup) {
+  popup.querySelector('.popup__close').addEventListener('click', function() {
+    closePopup(popup);
   });
 }
 
@@ -69,10 +69,10 @@ function createElement(imageValue, titleValue) {
     evt.target.classList.toggle('element__like_active');
   });
   elementImage.onclick = function() {
-    openPopup(popupImage);
     fullSizeImage.setAttribute('src', imageValue);
     fullSizeImage.setAttribute('alt', titleValue);
     imageCaption.textContent = titleValue;
+    openPopup(popupImage);
   };
   return elementAdded;
 }
